@@ -1,0 +1,3 @@
+function clearAll(){
+  globalApp.clearAll();
+}

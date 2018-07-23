@@ -1,0 +1,50 @@
+.chart-object{
+  height: 700px;
+  @media screen and (max-width: 600px){
+    height: 400px;
+  }
+  .bar-chart{
+    .bar{
+
+
+    }
+  }
+  .axis{
+    &.light-grey{
+      stroke: @light-grey;
+      path, line{
+        stroke: @light-grey;
+      }
+      text{
+        fill: @light-grey;
+      }
+    }
+    &.dark-grey{
+      stroke: @dark-grey;
+      path, line{
+        stroke: @dark-grey;
+      }
+      text{
+        fill: @dark-grey;
+      }
+    }
+
+    path, line{
+      fill: none;
+      shape-rendering: crispEdges;
+      stroke-width: 1px;
+    }
+    path{
+      display: none;
+    }
+    text {
+      stroke: none;
+    }
+  }
+  .lasso{
+    path{
+      fill: none;
+      stroke: @dark-grey;
+    }
+  }
+}

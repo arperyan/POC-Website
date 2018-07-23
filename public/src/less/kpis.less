@@ -1,0 +1,23 @@
+.header-kpi{
+  position: relative;
+  margin: 10px 0;
+  border-right: 2px solid @dark-grey;
+  &.no-border{
+    border: none;
+  }
+  @media screen and (max-width: @small-device){
+    border: none;
+  }
+  span{
+    display: block;
+
+  }
+  .header-kpi-label{
+    font-size: 10px;
+  }
+  .header-kpi-value{
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 4px;
+  }
+}

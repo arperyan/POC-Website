@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  include "./head.html"
+  <body>
+    include "./navbar.html"
+    include "./header-kpis.html"
+    <div class="container-fluid subtle-grey-bg main-container">
+      <div class="row title-row med-margin-v">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h2>Transactional flows (YonY%)</h2>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 text-right">
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger" id="primaryProductButton">All Products</button>
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" id="productDropdown">
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <input id="revenuMapRangeSlider" type="text" name="" value="">
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="btn-group filter-btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" onclick="toggleFilterPopup()" aria-haspopup="true" aria-expanded="false">
+              Filters <span class="caret"></span>
+            </button>
+            <ul class="filter-popup">
+              <li>
+                <div id="filterGroup" class="filter-group">
+                  <h3>Managing:</h3>
+                  <select id="managingRegionCountry" class="form-control" name="">
+                    <option value=""></option>
+                  </select>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="hsbc-map chart-object" id="mapObject">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    include "./includes.html"
+  </body>
+</html>
